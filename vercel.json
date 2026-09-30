@@ -19,11 +19,15 @@
       "dest": "/back-end/index.js"
     },
     {
+      "src": "/(.*)",
+      "dest": "/front-end/$1"
+    },
+    {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/front-end/index.html"
     }
   ]
 }
