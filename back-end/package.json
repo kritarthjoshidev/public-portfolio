@@ -1,0 +1,21 @@
+{
+  "name": "kritarth-portfolio-api",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Kritarth Joshi – Portfolio Backend API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node scripts/seed.js"
+  },
+  "author": "Kritarth Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0",
+    "nodemon": "^3.0.2"
+  }
+}
