@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Cursor from './components/Cursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -121,6 +122,7 @@ function App() {
         <Contact about={about} />
       </main>
       <Footer about={about} />
+      <Analytics />
     </div>
   );
 }
