@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.0.0",
+    "@vercel/analytics": "^2.0.1",
     "axios": "^1.20.0",
     "babel-jest": "^24.9.0",
     "bootstrap": "^5.3.2",
@@ -60,6 +61,12 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!src/index.js"
-    ]
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@vercel/analytics)/)"
+    ],
+    "moduleNameMapper": {
+      "^@vercel/analytics/react$": "<rootDir>/src/__mocks__/@vercel/analytics/react.js"
+    }
   }
 }
